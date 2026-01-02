@@ -2,52 +2,89 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OPG BUGROV</title>
+    <meta name="description" content="OPG BUGROV — комьюнити семьи на Arizona RP: сборки, скрипты, гайды и активное сообщество.">
+    <meta name="theme-color" content="#0f1720">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="OPG BUGROV">
+    <meta property="og:description" content="Тёмный цирк на Arizona RP — сборки, скрипты и сообщество.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://opgbugrov.github.io/">
+    <!-- если есть изображение, замените URL ниже -->
+    <meta property="og:image" content="https://opgbugrov.github.io/og-image.png">
+
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Шрифт (по желанию можно заменить / локализовать) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#main">Перейти к контенту</a>
 
-<header>
-    <h1>OPG BUGROV</h1>
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="about.html">О нас</a>
-        <a href="packs.html">Сборки</a>
-        <a href="scripts.html">Скрипты</a>
-    </nav>
-</header>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="site-title" href="index.html">OPG BUGROV</a>
 
-<section>
-    <div class="block">
-        <h2>Добро пожаловать в тёмный цирк</h2>
-        <p>
-            OPG BUGROV — комьюнити стрелковой семьи на Arizona RP.
-        </p>
-    </div>
+            <!-- checkbox-хак для простого мобильного меню -->
+            <input id="menu-toggle" class="menu-toggle" type="checkbox" aria-label="Открыть меню">
+            <label for="menu-toggle" class="menu-button" aria-hidden="true">
+                <span></span>
+            </label>
 
-    <div class="block">
-        <h2>Наши официальные сообщества</h2>
-        <div class="buttons">
-            <a href="https://discord.gg/8Gxwz2Z6Mu" target="_blank">Discord</a>
-            <a href="https://t.me/bugrov_opg" target="_blank">Telegram</a>
-            <a href="https://www.youtube.com/@kolyabugrov" target="_blank">YouTube</a>
+            <nav class="site-nav" aria-label="Главная навигация">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="packs.html">Сборки</a>
+                <a href="scripts.html">Скрипты</a>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <div class="block">
-        <h2>Что внутри?</h2>
-        <ul>
-            <li>Уникальные сборки и подборки</li>
-            <li>Полезные скрипты</li>
-            <li>Гайды и помощь новичкам</li>
-            <li>Активное сообщество</li>
-        </ul>
-    </div>
-</section>
+    <main id="main" class="container">
+        <section class="hero block">
+            <h1>Добро пожаловать в тёмный цирк</h1>
+            <p class="lead">
+                OPG BUGROV — комьюнити семьи на Arizona RP, где клоуны играют по своим правилам. 
+                Это место для тех, кто живёт игрой, любит стиль и отличный контент.
+            </p>
+            <p>
+                <a class="btn primary" href="packs.html">Посмотреть сборки</a>
+                <a class="btn" href="scripts.html">Скрипты и гайды</a>
+            </p>
+        </section>
 
-<footer>
-    OPG Bugrov © 2026 — Тёмный стиль, яркие решения
-</footer>
+        <section class="communities block" aria-labelledby="comms-title">
+            <h2 id="comms-title">Наши официальные сообщества</h2>
+            <div class="buttons">
+                <a class="btn social" href="https://discord.gg/8Gxwz2Z6Mu" target="_blank" rel="noopener noreferrer">Discord</a>
+                <a class="btn social" href="https://t.me/bugrov.opg" target="_blank" rel="noopener noreferrer">Telegram</a>
+                <a class="btn social" href="https://www.youtube.com/@kolyabugrov" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+        </section>
+
+        <section class="features block" aria-labelledby="features-title">
+            <h2 id="features-title">Что внутри?</h2>
+            <ul>
+                <li>Уникальные сборки и подборки</li>
+                <li>Полезные скрипты</li>
+                <li>Гайды и помощь новичкам</li>
+                <li>Активное сообщество</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>OPG Bugrov © 2026</p>
+            <nav aria-label="Социальные ссылки">
+                <a href="https://discord.gg/8Gxwz2Z6Mu" target="_blank" rel="noopener noreferrer">Discord</a>
+                <a href="https://t.me/bugrov.opg" target="_blank" rel="noopener noreferrer">Telegram</a>
+            </nav>
+        </div>
+    </footer>
 
 </body>
 </html>
